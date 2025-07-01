@@ -1,20 +1,20 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { styled } from "styled-components";
-import Button from "../components/button";
-import CardImageUpload from "../components/CardImageUpload";
-import Input from "../components/input";
-import TagInput from "../components/Tag/TagInput";
-import Textarea from "../components/textarea";
-import Avatar from "../public/items/avatar.png";
-import NavBarLogo from "../public/navbar-button.png";
-import "../theme.css";
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { styled } from 'styled-components';
+import Button from '../components/button';
+import CardImageUpload from '../components/ImageUpload/CardImageUpload';
+import Input from '../components/input';
+import TagInput from '../components/Tag/TagInput';
+import Textarea from '../components/textarea';
+import Avatar from '../public/items/avatar.png';
+import NavBarLogo from '../public/navbar-button.png';
+import '../theme.css';
 
 function AddItem() {
-  const [itemImage, setItemImage] = useState("");
-  const [itemName, setItemName] = useState("");
-  const [itemDescription, setItemDescription] = useState("");
-  const [itemPrice, setItemPrice] = useState("");
+  const [itemImage, setItemImage] = useState('');
+  const [itemName, setItemName] = useState('');
+  const [itemDescription, setItemDescription] = useState('');
+  const [itemPrice, setItemPrice] = useState('');
   const [itemTag, setItemTag] = useState([]);
   const [isButtonDisable, setIsButtonDisable] = useState(true);
 
